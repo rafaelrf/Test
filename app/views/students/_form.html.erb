@@ -1,4 +1,4 @@
-<form accept-charset="UTF-8" action="/students" class="nifty_form" id="new_student" method="post">
+<form accept-charset="UTF-8" action="/students" class="nifty_form" id="new_student" method="post" name="myForm">
     <div style="display:none">
         <input name="utf8" type="hidden" value="✓">
         <input name="authenticity_token" type="hidden" value="rN+eovP8RZN2qGM7HPQwJcu1X2O5LnCJL9GnbMmBL18=">
@@ -6,7 +6,7 @@
     <hr class="colorgraph">
     <div class="col-xs-6 col-sm-6 col-md-6">
         <div class="form-group">
-            <input id="student_name" name="student[name]" type="text" class="form-control input-lg" placeholder="Nome" tabindex="1">
+            <input id="student_name" onBlur="validate(myForm.student_name)" name="student[name]" type="text" class="form-control input-lg" placeholder="Nome" tabindex="1">
         </div>
         <div class="form-group">
             <input id="student_register" name="student[register_number]" type="text" class="form-control input-lg" placeholder="Numero de Registro" tabindex="3">
