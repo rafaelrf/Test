@@ -1,0 +1,20 @@
+<form accept-charset="UTF-8" action="/courses" class="nifty_form" id="new_course" method="post">
+    <div style="display:none">
+        <input name="utf8" type="hidden" value="✓">
+        <input name="authenticity_token" type="hidden" value="rN+eovP8RZN2qGM7HPQwJcu1X2O5LnCJL9GnbMmBL18=">
+    </div>
+    <hr class="colorgraph">
+    <div class="col-xs-6 col-sm-6 col-md-6">
+        <div class="form-group">
+            <input id="course_name" name="course[name]" type="text" class="form-control input-lg" placeholder="Nome" tabindex="1">
+        </div>
+        <div class="form-group">
+            <input id="course_description" name="course[description]" type="text" class="form-control input-lg" placeholder="Descrição" tabindex="3">
+        </div>
+         <div class="form-group">
+            <input id="course_status" name="course[status]" type="text" class="form-control input-lg" placeholder="Status" tabindex="3">
+        </div>
+
+        <input class="btn btn-default" name="commit" type="submit" value="Cadastrar">
+    </div>
+</form>
