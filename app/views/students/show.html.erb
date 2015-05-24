@@ -1,7 +1,14 @@
-<p id="notice"><%= notice %></p>
-
+<div class="panel panel-success">
+    <div class="panel-heading">
+        <h1 ng-if="name" align="middle" id="notice"><%= notice %></h1>
+    </div>
+    <div class="panel-body">
 Name: <%= @student.name %> <br>
 Register Number: <%= @student.register_number %> <br>
 Status: <%= @student.status %> <br>
+</div>
+</div>
+
+
 
 
